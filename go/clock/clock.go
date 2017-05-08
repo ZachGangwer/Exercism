@@ -2,18 +2,61 @@ package clock
 
 const testVersion = 4
 
-// You can find more details and hints in the test file.
-
-type Clock // Complete the type definition.  Pick a suitable data type.
-
-func New(hour, minute int) Clock {
+// Clock - Datatype representing a clock
+type Clock struct {
+	Hours   int
+	Minutes int
 }
 
-func (Clock) String() string {
+func findHour(hour int) int {
+
+	for hour >= 24 {
+		hour /= 24
+	}
+
+	return hour
 }
 
-func (Clock) Add(minutes int) Clock {
+func findMinute(minuteIn int) (hourMod int, minute int) {
+	hourMod = 0
+
+	for minuteIn >= 60 {
+		minuteIn -= 60
+		hourMod += 1
+	}
+
+	return hourMod, minuteIn
 }
 
-// Remember to delete all of the stub comments.
-// They are just noise, and reviewers will complain.
+func New(hour int, minute int) Clock {
+
+	hourMod, minute := findMinute(minute)
+	hour = findHour(hour + hourMod)
+
+	clock := Clock{
+		Hours:   hour,
+		Minutes: minute,
+	}
+
+	return clock
+}
+
+func (c Clock) String() string {
+	strHour := string(c.Hours)
+	strMin := string(c.Minutes)
+
+	if c.Hours < 10 {
+		strHour = "0" + strHour
+	}
+
+	if c.Minutes < 10 {
+		strMin = "0" + strMin
+	}
+
+	return strHour + ":" + strMin
+}
+
+func (c Clock) Add(minutes int) Clock {
+	c.Minutes += minutes
+	return c
+}
