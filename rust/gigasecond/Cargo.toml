@@ -4,4 +4,5 @@ version = "1.0.0"
 
 [dependencies]
 chrono = "0.2"
+time = "0.1.38"
 
