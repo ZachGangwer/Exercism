@@ -1,0 +1,1 @@
+/home/gangwerz/code/Exercisms/rust/raindrops/target/debug/raindrops-e0c5cf93fb6ef7fb: /home/gangwerz/code/Exercisms/rust/raindrops/tests/raindrops.rs /home/gangwerz/code/Exercisms/rust/raindrops/src/lib.rs
