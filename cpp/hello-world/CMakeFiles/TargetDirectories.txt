@@ -1,0 +1,3 @@
+/home/gangwerz/code/Exercisms/cpp/hello-world/CMakeFiles/rebuild_cache.dir
+/home/gangwerz/code/Exercisms/cpp/hello-world/CMakeFiles/hello-world.dir
+/home/gangwerz/code/Exercisms/cpp/hello-world/CMakeFiles/edit_cache.dir
