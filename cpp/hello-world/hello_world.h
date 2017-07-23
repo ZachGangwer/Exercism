@@ -5,8 +5,15 @@
 
 namespace hello_world {
 
+<<<<<<< HEAD
     std::string hello() {
         return std::string("Hello, World!");
     }
 }
+=======
+std::string hello();
+
+}
+
+>>>>>>> feature/cpp
 #endif
