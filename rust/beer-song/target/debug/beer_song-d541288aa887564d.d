@@ -1,1 +1,0 @@
-/home/gangwerz/code/Exercisms/rust/beer-song/target/debug/beer_song-d541288aa887564d: /home/gangwerz/code/Exercisms/rust/beer-song/src/lib.rs /home/gangwerz/code/Exercisms/rust/beer-song/tests/beer-song.rs

@@ -1,10 +1,6 @@
 # Hello World
 
-<<<<<<< HEAD
-The classical introductory exercise. Just say "Hello, World!".
-=======
 The classical introductory exercise. Just say "Hello, World!"
->>>>>>> feature/cpp
 
 ["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is
 the traditional first program for beginning programming in a new language
@@ -53,10 +49,6 @@ are new to C++, but have programmed in C, beware of
 
 This is an exercise to introduce users to using Exercism [http://en.wikipedia.org/wiki/%22Hello,_world!%22_program](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program)
 
-<<<<<<< HEAD
-## Submitting Incomplete Solutions
-=======
 ## Submitting Incomplete Problems
->>>>>>> feature/cpp
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 

@@ -1,6 +1,6 @@
 # Hello World
 
-The classical introductory exercise. Just say "Hello, World!".
+The classical introductory exercise. Just say "Hello, World!"
 
 ["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is
 the traditional first program for beginning programming in a new language
@@ -18,13 +18,6 @@ If everything goes well, you will be ready to fetch your first real exercise.
 
 In order to run the tests, issue the following command from the exercise
 directory:
-
-For running the tests provided, `rebar3` is used as it is the official build and
-dependency management tool for erlang now. Please refer to [the tracks installation
-instructions](http://exercism.io/languages/erlang/installation) on how to do that.
-
-In order to run the tests, you can issue the following command from the exercise
-directory.
 
 ```bash
 $ rebar3 eunit
@@ -60,6 +53,6 @@ environment expected by the exercises.
 
 This is an exercise to introduce users to using Exercism [http://en.wikipedia.org/wiki/%22Hello,_world!%22_program](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program)
 
-## Submitting Incomplete Solutions
+## Submitting Incomplete Problems
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 
