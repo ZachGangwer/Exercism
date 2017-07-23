@@ -1,0 +1,1 @@
+/home/gangwerz/code/Exercisms/rust/difference-of-squares/target/debug/difference_of_square-673e81b5a4919b5d: /home/gangwerz/code/Exercisms/rust/difference-of-squares/tests/difference-of-square.rs /home/gangwerz/code/Exercisms/rust/difference-of-squares/src/lib.rs
