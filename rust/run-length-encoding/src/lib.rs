@@ -1,31 +1,35 @@
 pub fn decode(arg: &str) -> String {
-    let mut input: Vec<u8> = arg.as_bytes().to_owned();
-    let mut out = String::new();
-    let mut temp: u8;
-    let mut count: u32;
-
-    while input.len() != 0 {
-        count = 0;
-        temp = input.pop().unwrap();
-
-        while temp == *input.last().unwrap() {
-            count += 1;
-            input.pop();
-        }
-
-        out = String::from(format!(
-            "{num}{chr}{prev}",
-            num = count,
-            chr = temp,
-            prev = out.as_str()
-        ));
-    }
-
-    return out;
+    return String::from(arg);
 }
 
 pub fn encode(arg: &str) -> String {
-    let mut temp = String::from(arg);
+    let mut input = arg.chars();
+    let mut out = String::new();
+    let mut count: u32 = 0;
+    let mut curr: char;
+    let mut prev: char = '❤';
 
-    return String::from("");
+    loop {
+        match input.next() {
+            Some(curr) => {
+                if curr == prev {
+                    count += 1;
+                } else {
+                    if count == 0 {
+                        out = out + format!("{}", curr).as_str();
+                    } else {
+                        out = out + format!("{num}{lttr}", num = count, lttr = curr).as_str();
+                    }
+                    
+                    count = 0;
+                    prev = curr;
+                }
+            },
+            None => {
+                break;
+            }
+        }
+    }
+
+    return out;
 }
